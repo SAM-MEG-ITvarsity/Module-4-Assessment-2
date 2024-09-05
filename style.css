@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   background: white; 
+    background-size: cover;
+    
+}
+header {
+    background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url("images/puzzle-background.jpg") no-repeat center center;
+    background-size: cover;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #ccc;
+    width: 100%;
+}
+#grid1-1{
+    position: absolute;
+    left: 400px;
+    top: 150px;
+}
+
+#grid1-2{
+    position: absolute;
+    left: 600px;
+    top: 150px;
+}
+
+#grid1-3{
+    position: absolute;
+    left: 800px;
+    top: 150px;
+}
+
+
+#grid2-1{
+    position: absolute;
+    left: 400px;
+    top: 350px;
+}
+
+#grid2-2{
+    position: absolute;
+    left: 600px;
+    top: 350px;
+}
+
+#grid2-3{
+    position: absolute;
+    left: 800px;
+    top: 350px;
+}
+
+#grid3-1{
+    position: absolute;
+    left: 400px;
+    top: 550px;
+}
+
+#grid3-2{
+    position: absolute;
+    left: 600px;
+    top: 550px;
+}
+
+#grid3-3{
+    position: absolute;
+    left: 800px;
+    top: 550px;
+}
+
+#img1-1-draggable{
+    position: absolute;
+    left: 10px;
+    top:150px;
+}
+
+#img1-2-draggable{
+    position: absolute;
+    left:150px ;
+    top:250px;
+}
+
+#img1-3-draggable{
+    position: absolute;
+    left: 10px;
+    top:350px;
+}
+
+#img2-1-draggable{
+    position: absolute;
+    left:150px ;
+    top:450px;
+}
+
+#img2-2-draggable{
+    position: absolute;
+    left: 1010px;
+    top:550px;
+}
+
+#img2-3-draggable{
+    position: absolute;
+    left:1100px ;
+    top:170px;
+}
+
+#img3-1-draggable{
+    position: absolute;
+    left: 1010px;
+    top:300px;
+}
+
+#img3-2-draggable{
+    position: absolute;
+    left:1100px ;
+    top:400px;
+}
+
+
+ #img3-3-draggable{
+    position: absolute;
+    left:120px ;
+    top:550px;
+}
+.puzzle-grid-drop {
+    border: 1px solid #b0bec5; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.puzzle-grid-drop:active {
+    cursor: grabbing;
+    transform: scale(0.98); 
+}
+
+
+
+.puzzle-grip-draggable{
+   align-items: flex-end;
+    left: 600px;
+    top: 0; 
+    border-radius: 10px;
+    cursor: grab;
+    transition: transform 0.3s; 
+    
+}
+
+.puzzle-grip-draggable:active {
+    cursor: grabbing;
+    transform: scale(0.98); 
+}
+
+.puzzle-grip-draggable:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
